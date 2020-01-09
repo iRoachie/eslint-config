@@ -46,26 +46,15 @@ Add the eslint extension for your editor. Example below is VSCode.
 In your "User Settings" add the following lines:
 
 ```json
-"eslint.autoFixOnSave": true,
-"editor.formatOnSave": false,
+"editor.codeActionsOnSave": {
+  "source.fixAll.eslint": true
+},
 "eslint.validate": [
-  {
-    "language": "javascript",
-    "autoFix": true
-  },
-  {
-    "language": "javascriptreact",
-    "autoFix": true
-  },
-  {
-    "language": "typescript",
-    "autoFix": true
-  },
-  {
-    "language": "typescriptreact",
-    "autoFix": true
-  }
-],
+  "javascript",
+  "javascriptreact",
+  "typescript",
+  "typescriptreact"
+]
 ```
 
 ### Example of extending the configuration
